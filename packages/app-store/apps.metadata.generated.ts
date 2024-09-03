@@ -34,6 +34,7 @@ import { metadata as googlevideo__metadata_ts } from "./googlevideo/_metadata";
 import gtm_config_json from "./gtm/config.json";
 import horizon_workrooms_config_json from "./horizon-workrooms/config.json";
 import { metadata as hubspot__metadata_ts } from "./hubspot/_metadata";
+import huddle01_config_json from "./huddle01/config.json";
 import { metadata as huddle01video__metadata_ts } from "./huddle01video/_metadata";
 import ics_feedcalendar_config_json from "./ics-feedcalendar/config.json";
 import intercom_config_json from "./intercom/config.json";
@@ -128,6 +129,7 @@ export const appStoreMetadata = {
   gtm: gtm_config_json,
   "horizon-workrooms": horizon_workrooms_config_json,
   hubspot: hubspot__metadata_ts,
+  huddle01: huddle01_config_json,
   huddle01video: huddle01video__metadata_ts,
   "ics-feedcalendar": ics_feedcalendar_config_json,
   intercom: intercom_config_json,

@@ -4211,6 +4211,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@calcom/huddle01@workspace:packages/app-store/huddle01":
+  version: 0.0.0-use.local
+  resolution: "@calcom/huddle01@workspace:packages/app-store/huddle01"
+  dependencies:
+    "@calcom/lib": "*"
+    "@calcom/types": "*"
+  languageName: unknown
+  linkType: soft
+
 "@calcom/huddle01video@workspace:packages/app-store/huddle01video":
   version: 0.0.0-use.local
   resolution: "@calcom/huddle01video@workspace:packages/app-store/huddle01video"
@@ -4771,6 +4780,15 @@ __metadata:
 "@calcom/sylapsvideo@workspace:packages/app-store/sylapsvideo":
   version: 0.0.0-use.local
   resolution: "@calcom/sylapsvideo@workspace:packages/app-store/sylapsvideo"
+  dependencies:
+    "@calcom/lib": "*"
+    "@calcom/types": "*"
+  languageName: unknown
+  linkType: soft
+
+"@calcom/synthflow@workspace:packages/app-store/synthflow":
+  version: 0.0.0-use.local
+  resolution: "@calcom/synthflow@workspace:packages/app-store/synthflow"
   dependencies:
     "@calcom/lib": "*"
     "@calcom/types": "*"

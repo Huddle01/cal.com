@@ -1,0 +1,16 @@
+{
+  "/*": "Don't modify slug - If required, do it using cli edit command",
+  "name": "Huddle01",
+  "slug": "huddle01",
+  "type": "huddle01_conferencing",
+  "logo": "icon.svg",
+  "url": "https://example.com/link",
+  "variant": "conferencing",
+  "categories": ["conferencing"],
+  "publisher": "Darshan Ponikar",
+  "email": "darshan@huddle01.com",
+  "description": "Schedule meetings",
+  "isTemplate": false,
+  "__createdUsingCli": true,
+  "__template": "basic"
+}
