@@ -360,7 +360,11 @@ export default async function main() {
   });
   await createApp("huddle01", "huddle01video", ["conferencing"], "huddle01_video");
 
-  // Payment apps
+  if (process.env.HUDDLE01_API_TOKEN) {
+    await createApp("huddle-01", "huddle-01", ["conferencing"], "huddle-01_conferencing", {
+      apiKey: process.env.HUDDLE01_API_TOKEN,
+    });
+  }
   if (
     process.env.STRIPE_CLIENT_ID &&
     process.env.STRIPE_PRIVATE_KEY &&
@@ -369,6 +373,7 @@ export default async function main() {
     process.env.PAYMENT_FEE_FIXED &&
     process.env.PAYMENT_FEE_PERCENTAGE
   ) {
+    // Payment apps
     await createApp("stripe", "stripepayment", ["payment"], "stripe_payment", {
       client_id: process.env.STRIPE_CLIENT_ID,
       client_secret: process.env.STRIPE_PRIVATE_KEY,

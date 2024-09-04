@@ -4211,9 +4211,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@calcom/huddle01@workspace:packages/app-store/huddle01":
+"@calcom/huddle-01@workspace:packages/app-store/huddle-01":
   version: 0.0.0-use.local
-  resolution: "@calcom/huddle01@workspace:packages/app-store/huddle01"
+  resolution: "@calcom/huddle-01@workspace:packages/app-store/huddle-01"
   dependencies:
     "@calcom/lib": "*"
     "@calcom/types": "*"

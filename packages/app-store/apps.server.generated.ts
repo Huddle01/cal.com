@@ -34,6 +34,7 @@ export const apiHandlers = {
   gtm: import("./gtm/api"),
   "horizon-workrooms": import("./horizon-workrooms/api"),
   hubspot: import("./hubspot/api"),
+  "huddle-01": import("./huddle-01/api"),
   huddle01video: import("./huddle01video/api"),
   "ics-feedcalendar": import("./ics-feedcalendar/api"),
   intercom: import("./intercom/api"),
