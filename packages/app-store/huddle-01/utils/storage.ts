@@ -9,7 +9,7 @@ const huddle01AppKeySchema = z.object({
 export async function storeHuddle01Credential(userId: number, identityToken: string) {
   const existingCredential = await prisma.credential.findFirst({
     where: {
-      type: "huddle01_conferencing",
+      type: "huddle-01",
       userId: userId,
       appId: "huddle-01",
     },
@@ -25,7 +25,7 @@ export async function storeHuddle01Credential(userId: number, identityToken: str
     // Create a new credential if it doesn't exist
     await prisma.credential.create({
       data: {
-        type: "huddle01_conferencing",
+        type: "huddle-01",
         key: { identityToken },
         userId: userId,
         appId: "huddle-01",
@@ -37,7 +37,7 @@ export async function storeHuddle01Credential(userId: number, identityToken: str
 export async function getHuddle01Credential(userId: number) {
   const credential = await prisma.credential.findFirst({
     where: {
-      type: "huddle01_conferencing",
+      type: "huddle-01",
       userId: userId,
       appId: "huddle-01",
     },
