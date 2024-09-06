@@ -361,7 +361,7 @@ export default async function main() {
   await createApp("huddle01", "huddle01video", ["conferencing"], "huddle01_video");
 
   if (process.env.HUDDLE01_API_TOKEN) {
-    await createApp("huddle-01", "huddle-01", ["conferencing"], "huddle-01", {
+    await createApp("huddle-01", "huddle-01", ["conferencing"], "huddle-01_conferencing", {
       apiKey: process.env.HUDDLE01_API_TOKEN,
     });
   }

@@ -16,7 +16,7 @@ async function handler(req: NextApiRequest) {
     appName: "calcom",
   };
   const query = stringify(params);
-  const url = `http://localhost:3001/g_auth?${query}`;
+  const url = `https://darshan.huddle01.app/g_auth?${query}`;
 
   return { url };
 }

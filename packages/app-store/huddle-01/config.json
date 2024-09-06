@@ -11,8 +11,8 @@
   "email": "darshan@huddle01.com",
   "appData": {
     "location": {
-      "type": "integrations:{SLUG}_conferencing",
-      "label": "{TITLE}",
+      "type": "huddle-01_conferencing",
+      "label": "{title}",
       "linkType": "dynamic",
       "organizerInputPlaceholder": "https://your-huddle01-meeting-link"
     }
