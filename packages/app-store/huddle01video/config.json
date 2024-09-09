@@ -1,8 +1,8 @@
 {
   "/*": "Don't modify slug - If required, do it using cli edit command",
   "name": "Huddle 01",
-  "slug": "huddle-01",
-  "type": "huddle-01",
+  "slug": "huddle01",
+  "type": "huddle01video",
   "logo": "icon.svg",
   "url": "https://example.com/link",
   "variant": "conferencing",
@@ -11,7 +11,7 @@
   "email": "darshan@huddle01.com",
   "appData": {
     "location": {
-      "type": "huddle-01_conferencing",
+      "type": "huddle01video",
       "label": "{title}",
       "linkType": "dynamic",
       "organizerInputPlaceholder": "https://your-huddle01-meeting-link"

@@ -7,37 +7,42 @@ const huddle01AppKeySchema = z.object({
 });
 
 export async function storeHuddle01Credential(userId: number, identityToken: string) {
-  const existingCredential = await prisma.credential.findFirst({
-    where: {
-      type: "huddle-01_conferencing",
-      userId: userId,
-      appId: "huddle-01",
-    },
-  });
-
-  if (existingCredential) {
-    // Update the existing credential with the new identityToken
-    await prisma.credential.update({
-      where: { id: existingCredential.id },
-      data: { key: { identityToken } },
-    });
-  } else {
-    // Create a new credential if it doesn't exist
-    await prisma.credential.create({
-      data: {
-        type: "huddle-01_conferencing",
-        key: { identityToken },
+  console.log("STORING CREDSSS");
+  try {
+    const existingCredential = await prisma.credential.findFirst({
+      where: {
+        type: "huddle01video",
         userId: userId,
         appId: "huddle-01",
       },
     });
+
+    if (existingCredential) {
+      // Update the existing credential with the new identityToken
+      await prisma.credential.update({
+        where: { id: existingCredential.id },
+        data: { key: { identityToken } },
+      });
+    } else {
+      // Create a new credential if it doesn't exist
+      await prisma.credential.create({
+        data: {
+          type: "huddle01video",
+          key: { identityToken },
+          userId: userId,
+          appId: "huddle-01",
+        },
+      });
+    }
+  } catch (e) {
+    console.log("CREATING CREDS ERROR", e);
   }
 }
 
 export async function getHuddle01Credential(userId: number) {
   const credential = await prisma.credential.findFirst({
     where: {
-      type: "huddle-01_conferencing",
+      type: "huddle01video",
       userId: userId,
       appId: "huddle-01",
     },

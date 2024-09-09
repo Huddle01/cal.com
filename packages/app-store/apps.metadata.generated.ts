@@ -34,8 +34,7 @@ import { metadata as googlevideo__metadata_ts } from "./googlevideo/_metadata";
 import gtm_config_json from "./gtm/config.json";
 import horizon_workrooms_config_json from "./horizon-workrooms/config.json";
 import { metadata as hubspot__metadata_ts } from "./hubspot/_metadata";
-import { metadata as huddle01video__metadata_ts } from "./huddle01video/_metadata";
-import huddle_01_config_json from "./huddle-01/config.json";
+import huddle01video_config_json from "./huddle01video/config.json";
 import ics_feedcalendar_config_json from "./ics-feedcalendar/config.json";
 import intercom_config_json from "./intercom/config.json";
 import jelly_config_json from "./jelly/config.json";
@@ -129,8 +128,7 @@ export const appStoreMetadata = {
   gtm: gtm_config_json,
   "horizon-workrooms": horizon_workrooms_config_json,
   hubspot: hubspot__metadata_ts,
-  "huddle-01": huddle_01_config_json,
-  huddle01video: huddle01video__metadata_ts,
+  huddle01video: huddle01video_config_json,
   "ics-feedcalendar": ics_feedcalendar_config_json,
   intercom: intercom_config_json,
   jelly: jelly_config_json,
