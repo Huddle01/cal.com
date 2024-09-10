@@ -13,7 +13,7 @@ export const metadata = {
   logo: "icon.svg",
   publisher: "Huddle01",
   url: "https://www.huddle01.com/",
-  slug: "huddle-01",
+  slug: "huddle01",
   title: "Huddle01",
   isGlobal: false,
   email: "support@huddle01.com",

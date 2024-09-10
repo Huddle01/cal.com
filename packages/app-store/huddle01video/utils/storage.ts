@@ -13,7 +13,7 @@ export async function storeHuddle01Credential(userId: number, identityToken: str
       where: {
         type: "huddle01video",
         userId: userId,
-        appId: "huddle-01",
+        appId: "huddle01",
       },
     });
 
@@ -30,7 +30,7 @@ export async function storeHuddle01Credential(userId: number, identityToken: str
           type: "huddle01video",
           key: { identityToken },
           userId: userId,
-          appId: "huddle-01",
+          appId: "huddle01",
         },
       });
     }
@@ -44,7 +44,7 @@ export async function getHuddle01Credential(userId: number) {
     where: {
       type: "huddle01video",
       userId: userId,
-      appId: "huddle-01",
+      appId: "huddle01",
     },
   });
 
@@ -62,7 +62,7 @@ const huddle01APIKeySchema = z.object({
 export async function getHuddle01APIKey() {
   const appCreds = await prisma.app.findFirst({
     where: {
-      slug: "huddle-01",
+      slug: "huddle01",
     },
   });
 

@@ -26,7 +26,7 @@ const fetchHuddleAPI = async (userId: number) => {
   };
 };
 
-const log = logger.getSubLogger({ prefix: ["app-store/huddle-01/lib/VideoApiAdapter"] });
+const log = logger.getSubLogger({ prefix: ["app-store/huddle01video/lib/VideoApiAdapter"] });
 
 const Huddle01ApiAdapter = (credential: CredentialPayload): VideoApiAdapter => {
   credential.userId;

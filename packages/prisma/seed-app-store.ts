@@ -209,6 +209,9 @@ async function createApp(
     // We need to enable seeded apps as they are used in tests.
     const data = { slug, dirName, categories, keys, enabled: true };
 
+    if (slug === "huddle01") {
+      console.log("HUDDLE KA DATA", keys, data);
+    }
     if (!foundApp) {
       await prisma.app.create({
         data,
@@ -358,10 +361,10 @@ export default async function main() {
   await createApp("make", "make", ["automation"], "make_automation", {
     invite_link: "https://make.com/en/hq/app-invitation/6cb2772b61966508dd8f414ba3b44510",
   });
-  await createApp("huddle01", "huddle01video", ["conferencing"], "huddle01_video");
 
   if (process.env.HUDDLE01_API_TOKEN) {
-    await createApp("huddle-01", "huddle-01", ["conferencing"], "huddle-01_conferencing", {
+    console.log("STORING HUDDLE DATA", process.env.HUDDLE01_API_TOKEN);
+    await createApp("huddle01", "huddle01video", ["conferencing"], "huddle01video", {
       apiKey: process.env.HUDDLE01_API_TOKEN,
     });
   }

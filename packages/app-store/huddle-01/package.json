@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "private": true,
-  "name": "@calcom/huddle-01",
+  "name": "@calcom/huddle01",
   "version": "0.0.0",
   "main": "./index.ts",
   "dependencies": {
